@@ -1,0 +1,124 @@
+//Declarando Variables
+$amarillo: #F1EAAB;
+$azulado: #7FBCD2;
+$gris: #D9D9D9;
+$plata: #C3CAD0;
+
+// Modificaciones generales
+
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+}
+
+h1{
+    
+    font-size: 48px;
+    text-align: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.register{
+    background-image: url(../../../public/img-background-login.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+.container-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 3rem);
+    gap: 2rem;
+}
+
+
+
+
+//modificaciones
+
+.rellenar-datos{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    border-radius: 20px;
+    background-color: $gris;
+    gap: 1.5rem;
+    padding: 1.5rem;
+
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        align-items: center;
+        .registro{
+            background-color: $azulado;
+            border-radius: 40px;
+            border: none;
+            width: fit-content;
+            height: 2rem;
+            padding: 1rem 5rem 2rem 5rem;            
+            &:hover{
+                background: black;
+                color: white;
+            }
+            &:active{
+                background-color: $amarillo;
+                color: black;
+            }
+        }
+
+        .login{
+            background-color: $gris;
+            border-radius: 40px;
+            border: none;
+            width: fit-content;
+            height: 2rem;
+            padding: 1rem 5rem 2rem 5rem;
+            &:hover{
+                background: black;
+                color: white;
+            }
+            &:active{
+                background-color: $amarillo;
+                color: black;
+            }
+        }
+    }
+
+    .correo-dato{
+        border-radius: 2rem;
+        border: none;
+        text-align: center;
+
+    }
+
+    .contraseña-dato{
+        border: none;
+        text-align: center;
+        border-radius: 2rem;
+        
+    }
+}
+
+footer{
+    position: fixed;
+    background: 100% $azulado;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+
