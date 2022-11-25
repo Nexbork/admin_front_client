@@ -1,1 +1,13 @@
-/*# sourceMappingURL=app.component.css.map */
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}/*# sourceMappingURL=app.component.css.map */

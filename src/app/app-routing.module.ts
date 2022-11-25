@@ -6,7 +6,6 @@ import { PanelAdministradorComponent } from './panel.administrador/panel.adminis
 import { RegistroAdminComponent } from './registro.admin/registro.admin.component';
 
 const routes: Routes = [
-
   {
     path:'',
     component:LoginHomeComponent
@@ -16,7 +15,7 @@ const routes: Routes = [
     component:RegistroAdminComponent
   },
   {
-    path:'Panel',
+    path:'panel',
     component:PanelAdministradorComponent
   }
 ];

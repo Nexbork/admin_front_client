@@ -17,8 +17,8 @@ h2 {
   font-size: 2rem;
 }
 
-.Login {
-  background-image: url(../registro.admin/public/img-background-login.jpg);
+.register {
+  background-image: url(../../../public/img-background-login.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -48,26 +48,8 @@ h2 {
   gap: 1rem;
   align-items: center;
 }
-.rellenar-datos .botones .ingresar {
-  background-color: #7FBCD2;
-  border-radius: 40px;
-  border: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 2rem;
-  padding: 1rem 5rem 2rem 5rem;
-}
-.rellenar-datos .botones .ingresar:hover {
-  background: black;
-  color: white;
-}
-.rellenar-datos .botones .ingresar:active {
-  background-color: #F1EAAB;
-  color: black;
-}
 .rellenar-datos .botones .registro {
-  background-color: #D9D9D9;
+  background-color: #7FBCD2;
   border-radius: 40px;
   border: none;
   width: -webkit-fit-content;
@@ -81,6 +63,24 @@ h2 {
   color: white;
 }
 .rellenar-datos .botones .registro:active {
+  background-color: #F1EAAB;
+  color: black;
+}
+.rellenar-datos .botones .login {
+  background-color: #D9D9D9;
+  border-radius: 40px;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2rem;
+  padding: 1rem 5rem 2rem 5rem;
+}
+.rellenar-datos .botones .login:hover {
+  background: black;
+  color: white;
+}
+.rellenar-datos .botones .login:active {
   background-color: #F1EAAB;
   color: black;
 }
