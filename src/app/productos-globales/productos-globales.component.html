@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class="nav">
+        <nav class="nav">
+            <a href="/panel">Glorius</a>
+            <a href="#">Mi Cuenta</a>
+        </nav>
+    </div>
+    <div class="top">
+        <h2>Tabla de productos globales</h2>
+        <a href="/opciones-registro">Regresar</a>
+    </div>
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id producto</th>
+                    <th>Codigo Producto</th>
+                    <th>Nombre</th>
+                    <th>Subproductos</th>
+                    <th>Colección</th>
+                    <th>Temporada</th>
+                    <th>Material</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+                <tr *ngFor="let i of products">
+                    <td>{{i.id_global_product}}</td>
+                    <td>{{i.product_url_code}}</td>
+                    <td>{{i.product_name}}</td>
+                    <td><a href='productosglobales/Subproductos/{{i.product_url_code}}'>Subproductos</a></td>
+                    <td>{{i.product_collection.name}}</td>
+                    <td>{{i.product_season.name}}</td>
+                    <td>{{i.product_material.name}}</td>
+                    <td>{{i.product_category.name}}</td>
+                </tr>
+        </table>
+    </div>
+    
+</div>

@@ -1,18 +1,17 @@
 <div class="container">
   <nav class="nav">
-    <a href="#">Glorius</a>
-    <a href="#">Productos</a>
+    <a href="/panel">Glorius</a>
     <a href="#">Mi Cuenta</a>
   </nav>
   <div class="section">
     <div class="welcome">
-      <h1>Hola</h1>
+      <h1>Bienvenido Adminitrador</h1>
     </div>
     <div class="buttons">
-      <div class="options"><a href="#" class="option">REGISTROS ADMINISTRATIVOS ></a></div>
+      <div class="options"><a routerLink="/opciones-registro" class="option">REGISTROS ADMINISTRATIVOS ></a></div>
       <div class="options"><a href="#" class="option">REPORTES COMERCIALES ></a></div>
       <div class="options"><a href="#" class="option">GESTION DE USUARIO ></a></div>
-      <div class="logout"><a href="#" class="logout">CERRAR SESION ></a></div>
+      <div class="logout" (click)="CerrarSesion()"><p class="logout">CERRAR SESION ></p></div>
     </div>
   </div>
 
@@ -37,7 +36,7 @@
         </div>
     </div>
     <div class="copy">
-      <p>@COPYRIGHT BY GLORIUS</p>
+      <p>@Copyright By Asterisk</p>
     </div>
   </footer>
 </div>

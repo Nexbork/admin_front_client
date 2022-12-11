@@ -3,7 +3,7 @@ $amarillo: #F1EAAB;
 $azulado: #7FBCD2;
 $gris: #D9D9D9;
 $plata: #C3CAD0;
-
+$green: #274854;
 // Modificaciones generales
 
 *{
@@ -14,14 +14,16 @@ $plata: #C3CAD0;
 }
 
 h1{
-    
+    margin: 1rem;
     font-size: 48px;
     text-align: center;
+    color: $azulado;
 }
 h2{
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    color: $green;
 }
 
 .register{
@@ -36,8 +38,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 3rem);
-    gap: 2rem;
+    height: 100vh;
 }
 
 
@@ -51,10 +52,10 @@ h2{
     border-style: none;
     border-radius: 20px;
     background-color: $gris;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    
-
+    gap: 0.5rem;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
 
     .botones{
         display: flex;
@@ -111,15 +112,16 @@ h2{
     }
 }
 
-footer{
-    position: fixed;
-    background: 100% $azulado;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    width: 100%;
-    height: 3rem;
-}
+// footer{
+//     position: relative;
+//     background: 100% $azulado;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 2rem;
+//     bottom: 0;
+//     width: 100%;
+//     height: 3rem;
+// }
 
 

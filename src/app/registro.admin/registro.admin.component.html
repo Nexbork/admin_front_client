@@ -3,17 +3,19 @@
         <h1>Bienvenidos a Glorius</h1>
         <div class="rellenar-datos">
             <h2 class="titulo-inicio">Registrate</h2>
-            <label for="nombre-register">Ingrese el nombre: <input type="text" class="contraseña-dato" id="nombre-datos"></label>
-            <label for="apellido-register">Ingrese el apellido: <input type="text" class="contraseña-dato" id="apellido-datos"></label>
-            <label for="correo-register">Ingrese el correo: <input type="text" class="contraseña-dato" id="correo-datos"></label>
-            <label for="contraseña-register">Ingrese la contraseña:<input type="password" class="contraseña-dato" id="contraseña-datos"></label>
+            <label for="nombre-register">Ingrese el nombre: <input type="text" required [(ngModel)] = "user.user_name" name="user_name" class="contraseña-dato" id="nombre-datos"></label>
+            <label for="apellido-register">Ingrese el apellido: <input type="text" required [(ngModel)] = "user.user_surname" name="user_surname" class="contraseña-dato" id="apellido-datos"></label>
+            <label for="correo-register">Ingrese tu tipo de documento: <input type="text" required [(ngModel)] = "user.user_document_type" name="user_document_type" class="contraseña-dato" id="typedocument-datos"></label>
+            <label for="correo-register">Ingrese el numero de tu documento: <input type="text" required [(ngModel)] = "user.user_document_number" name="user_document_number" class="contraseña-dato" id="numberdocument-datos"></label>
+            <label for="correo-register">Ingrese el correo: <input type="text" required [(ngModel)] = "user.user_email" name="user_email" class="contraseña-dato" id="correo-datos"></label>
+            <label for="contraseña-register">Ingrese la contraseña:<input type="password" required [(ngModel)] = "user.user_password" name="user_password" class="contraseña-dato" id="contraseña-datos"></label>
             <div class="botones">
-                <button type="submit" class="registro">Registrarme</button>
+                <button type="submit" (click)="formSubmit()" class="registro">Registrarme</button>
                 <a href=""><button class="login">Ya tengo cuenta, Quiero Ingresar</button></a>
             </div>
         </div>
     </div>
-    <footer>
-        <p>@Copyright by Glorius</p>
-    </footer>
+    <!-- <footer>
+        <p>@Copyright By Asterisk</p>
+    </footer> -->
 </div>

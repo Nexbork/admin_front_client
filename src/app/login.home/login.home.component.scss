@@ -3,6 +3,7 @@ $amarillo: #F1EAAB;
 $azulado: #7FBCD2;
 $gris: #D9D9D9;
 $plata: #C3CAD0;
+$green: #274854;
 
 // Modificaciones generales
 
@@ -17,11 +18,13 @@ h1{
     
     font-size: 48px;
     text-align: center;
+    color: $azulado;
 }
 h2{
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    color: $green;
 }
 
 .Login{
@@ -53,6 +56,7 @@ h2{
     background-color: $gris;
     gap: 1.5rem;
     padding: 1.5rem;
+    align-items: center;
 
     .botones{
         display: flex;

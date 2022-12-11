@@ -49,23 +49,20 @@ $yellow: #F1EAAB;
         width: 100%;
         text-align: center;
         padding: 1rem;
-        h1{
-          color: white;
-        }
       }
       .buttons{
         margin-top: 2rem;
         width: 100%;
         height: 50vh;
         display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 60%);
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(3, 60%);
         grid-gap: 1rem;
         justify-content: center;
         text-align: center;
         .options{
           display: flex;
-          background: $green;
+          background: $ligt;
           border-radius: 10px;
           width: 100%;
           align-items: center;
@@ -76,27 +73,25 @@ $yellow: #F1EAAB;
             
           }
         }
-        .logout{
+        .regresar{
           display: flex;
           background: $yellow;
           border-radius: 10px;
-          width: 100%;
           align-items: center;
           justify-content: center;
-          :hover{
-            cursor: pointer;  
-          }
-          p{
+          a{
+            color: white;
             text-decoration: none;
+            
           }
         }
+        
       }
     }
  
     // FOOTER-------------------------------------------------------
     footer{
       width: 100%;
-      margin-top: 10rem;
       .section2{
         background: $gray;
         display: flex;
@@ -104,28 +99,6 @@ $yellow: #F1EAAB;
         flex-direction: row;
         padding-bottom: 5rem;
         padding-top: 5rem;
-        .logo{
-          p{
-            padding: 1rem;
-            margin-top: 2rem;
-  
-          }
-        }
-        
-        .help{
-          display: flex;
-          flex-direction: column;
-          a{
-            text-decoration: none;
-          }
-        }
-        .aboutus{
-          display: flex;
-          flex-direction: column;
-          a{
-            text-decoration: none;
-          }
-        }
       }
       .copy{
       background: 100% $ligt;
